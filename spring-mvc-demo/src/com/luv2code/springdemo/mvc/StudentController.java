@@ -18,7 +18,6 @@ public class StudentController {
 		return "student-form";
 	}
 
-	// TODO: revisar qué pasa con los getters :(...
 	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("student") Student student) {
 		System.out.println("The Student: " + student.getFirstName() + " " + student.getLastName());
